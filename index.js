@@ -58,7 +58,7 @@ app.use(express.urlencoded({ extended: true }))
   }
 
 
-  app.post('/wtsp-register-appoinment', (req, res) => {
+  app.post('/wtsp-webhook', (req, res) => {
     if (req.body && req.body.messages) {
       for (let message of req.body.messages) {
         if (message) {
