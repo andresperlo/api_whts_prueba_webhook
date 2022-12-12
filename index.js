@@ -39,9 +39,9 @@ app.use(express.urlencoded({ extended: true }))
        // let config = this.credentials.accounts[update.recipient.id + '_' + update.sender.id] || this.credentials.accounts[update.recipient.id];
 
         // Define update payload
-        update.payload.training = config.message.training;
+        /* update.payload.training = config.message.training;
         update.payload.language = config.message.language;
-        update.payload.channel = config.message.channel;
+        update.payload.channel = config.message.channel; */
 
         // Define update message text
         if (rawUpdate.type == 'text') {
